@@ -3,25 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Galería de Productos de Sublimación</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .galeria img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .producto {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a mi página web Allan</h1>
-    </header>
-    <main>
-        <p>Este es un párrafo de ejemplo en mi página web.</p>
-    </main>
-    <footer>
-        <p>© 2024 Mi Página Web</p>
-    </footer>
-    <script src="script.js"></script>
+
+    <h1 style="text-align:center;">Productos de Sublimación</h1>
+
+    <div class="galeria">
+        <div>
+            <img src="camiseta-sublimada.jpg" alt="Camiseta Sublimada">
+            <div class="producto">Camiseta Sublimada</div>
+        </div>
+        <div>
+            <img src="taza-personalizada.jpg" alt="Taza Personalizada">
+            <div class="producto">Taza Personalizada</div>
+        </div>
+        <div>
+            <img src="gorra-sublimada.jpg" alt="Gorra Sublimada">
+            <div class="producto">Gorra Sublimada</div>
+        </div>
+        <!-- Agrega más productos aquí -->
+    </div>
+
 </body>
 </html>
-<script>
-console.log("¡Bienvenido a mi página web!");
-</script>
+
+<div>
+    <img src="taza-personalizada.jpg" alt="Taza Personalizada">
+    <div class="producto">Taza Personalizada</div>
+    <p>Precio: $10</p>
+    <p>Descripción breve del producto.</p>
+</div>
+
+
 
 
 
