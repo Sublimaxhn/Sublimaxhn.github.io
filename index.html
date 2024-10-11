@@ -3,101 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú de Productos</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Catálogo de Productos</title>
     <style>
-        /* Estilos del menú */
-        nav {
-            background-color: #4CAF50;
-            padding: 15px;
-        }
-        nav ul {
-            list-style-type: none; /* Eliminar los puntos de la lista */
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: space-around; /* Espaciar los elementos del menú */
-        }
-        nav ul li {
-            padding: 10px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-        }
-        nav ul li a:hover {
-            background-color: #45a049; /* Efecto hover */
-            border-radius: 5px;
-            padding: 10px;
-        }
-        /* Estilos del cuerpo de la página */
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
         }
-        main {
-            margin: 20px;
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
             text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .catalogo {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .producto {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .producto img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .producto h3 {
+            margin: 15px;
+            font-size: 18px;
+        }
+        .producto p {
+            margin: 15px;
+            color: #555;
+        }
+        .producto .precio {
+            margin: 15px;
+            font-weight: bold;
+            color: #333;
+        }
+        .producto button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 0 0 10px 10px;
+        }
+        .producto button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Sublimax</h1>
-        <h3>Bienvenido a Nuestra Tienda de Sublimación</h3>
+        <h1>Catálogo de Productos de Sublimación</h1>
     </header>
 
-    <!-- Menú de productos -->
-    <nav>
-        <ul>
-            <li><a href="#camisetas">Camisetas</a></li>
-            <li><a href="#tazas">Tazas</a></li>
-            <li><a href="#gorros">Gorros</a></li>
-            <li><a href="#cojines">Cojines</a></li>
-            <li><a href="#accesorios">Accesorios</a></li>
-            <li><a href="#sueter">Sueter</a></li>
-        </ul>
-    </nav>
-
-    <!-- Contenido principal de la página -->
-    <main>
-        <section id="camisetas">
-            <h2>Camisetas Sublimadas</h2>
-            <p>Las mejores camisetas personalizadas para cada ocasión.</p>
-        </section>
-        
-        <section id="tazas">
-            <h2>Tazas Personalizadas</h2>
-            <p>El regalo perfecto para esa persona especial.</p>
-        </section>
-        
-        <section id="gorros">
-            <h2>Gorros Sublimados</h2>
-            <p>Protege tu cabeza con estilo con nuestros gorros sublimados.</p>
-        </section>
-
-        <section id="cojines">
-            <h2>Cojines Personalizados</h2>
-            <p>Agrega un toque único a tu hogar con cojines personalizados.</p>
-        </section>
-
-        <section id="accesorios">
-            <h2>Accesorios Sublimados</h2>
-            <p>Explora nuestra gama de accesorios únicos y personalizados.</p>
-        </section>
-
-        <section id="sueter"></section>
-            <h2>Accesorios Sublimados</h2>
-            <p>Explora nuestra gama de accesorios únicos y personalizados.</p>
-        </section>
-    </main>
+    <!-- Catálogo de productos -->
+    <section class="catalogo">
+        <!-- Producto 1 -->
+        <div class="producto">
+            <img src="camiseta-sublimada.jpg" alt="Camiseta Sublimada">
+            <h3>Camiseta Sublimada</h3>
+            <p>Camisetas de alta calidad personalizadas con tus propios diseños.</p>
+            <p class="precio">$15.00</p>
+            <button>Añadir al carrito</button>
+        </div>
+        <!-- Producto 2 -->
+        <div class="producto">
+            <img src="taza-personalizada.jpg" alt="Taza Personalizada">
+            <h3>Taza Personalizada</h3>
+            <p>Tazas de cerámica personalizadas con tus fotos o logos.</p>
+            <p class="precio">$8.00</p>
+            <button>Añadir al carrito</button>
+        </div>
+        <!-- Producto 3 -->
+        <div class="producto">
+            <img src="gorra-sublimada.jpg" alt="Gorra Sublimada">
+            <h3>Gorra Sublimada</h3>
+            <p>Gorras personalizadas con tu marca o diseño preferido.</p>
+            <p class="precio">$12.00</p>
+            <button>Añadir al carrito</button>
+        </div>
+        <!-- Producto 4 -->
+        <div class="producto">
+            <img src="cojin-personalizado.jpg" alt="Cojín Personalizado">
+            <h3>Cojín Personalizado</h3>
+            <p>Cojines sublimados ideales para decorar tu hogar.</p>
+            <p class="precio">$10.00</p>
+            <button>Añadir al carrito</button>
+        </div>
+        <!-- Agregar más productos aquí -->
+    </section>
 
     <footer>
         <p>© 2024 Mi Tienda de Sublimación</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
