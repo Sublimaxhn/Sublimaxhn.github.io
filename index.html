@@ -3,25 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
+    <title>Menú de Productos</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos del menú */
+        nav {
+            background-color: #4CAF50;
+            padding: 15px;
+        }
+        nav ul {
+            list-style-type: none; /* Eliminar los puntos de la lista */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around; /* Espaciar los elementos del menú */
+        }
+        nav ul li {
+            padding: 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            background-color: #45a049; /* Efecto hover */
+            border-radius: 5px;
+            padding: 10px;
+        }
+        /* Estilos del cuerpo de la página */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        main {
+            margin: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+
     <header>
-        <h1>Bienvenido a mi página web</h1>
+        <h1>Bienvenido a Nuestra Tienda de Sublimación</h1>
     </header>
+
+    <!-- Menú de productos -->
+    <nav>
+        <ul>
+            <li><a href="#camisetas">Camisetas</a></li>
+            <li><a href="#tazas">Tazas</a></li>
+            <li><a href="#gorros">Gorros</a></li>
+            <li><a href="#cojines">Cojines</a></li>
+            <li><a href="#accesorios">Accesorios</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal de la página -->
     <main>
-        <p>Este es un párrafo de ejemplo en mi página web.</p>
+        <section id="camisetas">
+            <h2>Camisetas Sublimadas</h2>
+            <p>Las mejores camisetas personalizadas para cada ocasión.</p>
+        </section>
+        
+        <section id="tazas">
+            <h2>Tazas Personalizadas</h2>
+            <p>El regalo perfecto para esa persona especial.</p>
+        </section>
+        
+        <section id="gorros">
+            <h2>Gorros Sublimados</h2>
+            <p>Protege tu cabeza con estilo con nuestros gorros sublimados.</p>
+        </section>
+
+        <section id="cojines">
+            <h2>Cojines Personalizados</h2>
+            <p>Agrega un toque único a tu hogar con cojines personalizados.</p>
+        </section>
+
+        <section id="accesorios">
+            <h2>Accesorios Sublimados</h2>
+            <p>Explora nuestra gama de accesorios únicos y personalizados.</p>
+        </section>
     </main>
+
     <footer>
-        <p>© 2024 Mi Página Web</p>
+        <p>© 2024 Mi Tienda de Sublimación</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
-<script>
-console.log("¡Bienvenido a mi página web!");
-</script>
-
-
-
